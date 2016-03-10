@@ -1,0 +1,45 @@
+{
+	"name": "nativescript-audioplayer",
+	"version": "1.0.1",
+	"description": "Full blown AudioPlayer NativeScript plugin.",
+	"nativescript": {
+		"platforms": {
+			"android": "1.6.3",
+      "ios": "1.6.0"
+		}
+	},
+	"typings": "mymodule.d.ts",
+	"scripts": {
+		"build": "tsc",
+    "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
+		"demo.android": "npm run preparedemo; cd demo; tns run android",
+		"preparedemo": "npm run build; cd demo; tns plugin remove nativescript-audioplayer; tns plugin add ..; tns install",
+		"setup": "cd demo; npm install; cd ..; npm run buicld; cd demo; tns plugin add ..; cd .."
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dfg-nota/nativescript-audioplayer.git"
+	},
+	"keywords": [
+		"NativeScript",
+		"JavaScript",
+		"Android",
+		"iOS"
+	],
+	"author": {
+		"name": "Daniel Freiling",
+		"email": "dfg@nota.dk"
+	},
+	"bugs": {
+		"url": "https://github.com/dfg-nota/nativescript-audioplayer/issues"
+	},
+	"license": {
+		"type": "MIT",
+		"url": "https://github.com/dfg-nota/nativescript-audioplayer/blob/master/LICENSE"
+	},
+	"homepage": "https://github.com/dfg-nota/nativescript-audioplayer",
+	"readmeFilename": "README.md",
+	"devDependencies": {
+		"typescript": "^1.8.7"
+	}
+}
