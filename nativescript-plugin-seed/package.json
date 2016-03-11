@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-audioplayer",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Full blown AudioPlayer NativeScript plugin.",
 	"nativescript": {
 		"platforms": {
@@ -8,13 +8,13 @@
       "ios": "1.6.0"
 		}
 	},
-	"typings": "mymodule.d.ts",
+	"main": "audioplayer.js",
 	"scripts": {
 		"build": "tsc",
-    "demo.ios": "npm run preparedemo; cd demo; tns emulate ios",
-		"demo.android": "npm run preparedemo; cd demo; tns run android",
-		"preparedemo": "npm run build; cd demo; tns plugin remove nativescript-audioplayer; tns plugin add ..; tns install",
-		"setup": "cd demo; npm install; cd ..; npm run buicld; cd demo; tns plugin add ..; cd .."
+    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+		"demo.android": "npm run preparedemo && cd demo && tns run android",
+		"preparedemo": "npm run build && cd demo && tns plugin remove nativescript-audioplayer && tns plugin add .. && tns install",
+		"setup": "cd demo && npm install && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
 	},
 	"repository": {
 		"type": "git",

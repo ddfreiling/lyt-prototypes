@@ -1,4 +1,4 @@
-declare module "lyt/audioplayer" {
+declare module "nativescript-audioplayer" {
 
   export interface OnPlaybackStateChangedListener {
     onPlaybackStateChanged(state: string);

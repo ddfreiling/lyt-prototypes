@@ -6,8 +6,20 @@
         "experimentalDecorators": true,
         "noEmitHelpers": true
     },
+    "filesGlob": [
+        "**/*.ts"
+    ],
     "exclude": [
         "node_modules",
         "platforms"
-    ]
+    ],
+    "files": [
+        "app/app.ts",
+        "app/main-page.ts",
+        "app/main-view-model.ts",
+        "references.d.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
 }

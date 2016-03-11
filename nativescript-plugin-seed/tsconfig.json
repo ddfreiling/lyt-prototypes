@@ -1,19 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "removeComments": true,
-        "experimentalDecorators": true,
-        "sourceMap": true
-    },
-    "files": [
-      "demo/node_modules/tns-core-modules/tns-core-modules.d.ts",
-      "android17.d.ts",
-      "ios.d.ts",
-      "mymodule.d.ts",
-      "lyt/audioplayer.d.ts",
-      "lyt/audioplayer.common.ts",
-      "lyt/audioplayer.android.ts"
-    ],
-    "compileOnSave": false
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules",
+    "platforms",
+    "demo"
+  ],
+  "files": [
+    "demo/node_modules/tns-core-modules/tns-core-modules.d.ts",
+    "android17.d.ts",
+    "ios.d.ts",
+    "audioplayer.android.ts",
+    "audioplayer.common.ts",
+    "audioplayer.d.ts"
+  ],
+  "compileOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }
